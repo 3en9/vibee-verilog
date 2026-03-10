@@ -159,6 +159,7 @@ else
 fi
 
 # Copy binary
+mkdir -p ../../bin
 cp zig-out/bin/vibeec ../../bin/vibee
 cd ../..
 
