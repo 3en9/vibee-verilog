@@ -162,6 +162,7 @@ fi
 mkdir -p ../../bin
 cp zig-out/bin/vibeec ../../bin/vibee
 cd ../..
+echo "../src/py2vibee.py" >> bin/py2vibee
 
 echo -e "${GREEN}✓ Compiler built successfully${RESET}"
 echo ""
