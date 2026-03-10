@@ -163,6 +163,7 @@ mkdir -p ../../bin
 cp zig-out/bin/vibeec ../../bin/vibee
 cd ../..
 echo "../src/py2vibee.py" >> bin/py2vibee
+mkdir -p trinity/output/
 
 echo -e "${GREEN}✓ Compiler built successfully${RESET}"
 echo ""
@@ -184,9 +185,8 @@ echo -e "${GREEN}${BOLD}  VIBEE installation complete!                          
 echo -e "${GREEN}${BOLD}═══════════════════════════════════════════════════════════════${RESET}"
 echo ""
 echo -e "${CYAN}Next steps:${RESET}"
-echo "  1. Try generating code: ${BOLD}./bin/vibee gen specs/tri/ai_provider.vibee${RESET}"
-echo "  2. Run tests: ${BOLD}zig test trinity/output/ai_provider.zig${RESET}"
-echo "  3. Use py2vibee: ${BOLD}py2vibee --help${RESET}"
+echo "  1. Try generating code: ${BOLD}./bin/vibee gen input.vibee${RESET}"
+echo "  2. Use py2vibee: ${BOLD}py2vibee --help${RESET}"
 echo ""
 echo -e "${YELLOW}Note: The Zig installation is temporary (in /tmp).${RESET}"
 echo -e "${YELLOW}To make Zig permanently available, add to your PATH:${RESET}"
